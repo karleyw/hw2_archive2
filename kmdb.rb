@@ -75,16 +75,28 @@ Movie.destroy_all
 Actor.destroy_all
 Role.destroy_all
 
-# Generate models and tables, according to the domain model.
+# Generate models and tables, according to the domain model: model names are singular // table names are plural
 # TODO!
+
 # rails generate model Studio
 # rails generate model Movie
 # rails generate model Actor
-# rails generat model Role
+# rails generate model Role
+# Enter info to in migrate files to create columns
+# rails db:migrate
+
+puts "There are #{Studio.all.count} studios in the studio table."
+puts "There are #{Movie.all.count} movies in the movies table."
+puts "There are #{Actor.all.count} actors in the actors table."
+puts "There are #{Role.all.count} roles in the movies table."
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+# Insert data for studio
+#Warner Bros =
+
+
 
 # Prints a header for the movies output
 puts "Movies"
@@ -102,3 +114,6 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
+
+# Associations = relationships between models
